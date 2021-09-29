@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.slides-container{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.slides-container .drop-nav{
+    position: fixed;
+    top: 30%;
+    right: 20px;
+}
+.slides-container .auto-scroll-container{
+    position: fixed;
+    top: 10%;
+    right: 20px;
+    cursor: pointer;
+}
+.slides-container .auto-scroll-container .time-text{
+    font-size: 80%;
+    text-align: center;
+}
+.slides-container .auto-scroll-container input{
+    width: 70px;
+    height: 35px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    text-align: center;
+    outline: 0px;
+    background-color: transparent;
+    border-width: 0px 0px 2px 0px;
+    border-bottom-color: rgb(0, 255, 13);
+    -moz-appearance: textfield
+}
+
+.slides-container .auto-scroll-container .auto-scroll{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: rgb(121, 120, 120);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px inset rgb(92, 90, 90);
+    color: rgb(85, 82, 77);
+}
+
+
+
+.slides-container .drop-nav > div{
+    width: auto;
+    height: 35px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.slides-container .tools{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+.slides-container .tools > button{
+    outline: 0px;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+.slides-container .tools > button:first-child{
+    background-color: rgb(62, 108, 195);
+    color: rgb(123, 189, 243);
+}
+.slides-container .tools > button:first-child:active{
+    background-color: rgb(30, 51, 90);
+    
+}
+.slides-container .tools > button:last-child{
+    background-color: rgb(73, 195, 62);
+    color: rgb(177, 245, 180);
+}
+.slides-container .tools > button:last-child:active{
+    background-color: rgb(28, 78, 23);
+
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slide .slide-content-1 {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.slide .slide-content-1 > .content {
+    width: 60%;
+    
+}
+.slide .slide-content-1 > .content > p {
+    font-size: 105%;
+    color: lightgray;
+    line-height: 25px;
+}
+
+.slide .slide-content-2 {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.slide .slide-content-2 > .content {
+    width: 70%;
+}
+.slide .slide-content-2 > .content > .inner {
+    font-size: 350%;
+    text-align: center;
+}
+
